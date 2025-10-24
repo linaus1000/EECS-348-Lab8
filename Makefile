@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11
 
-all: football temp_convert
+all: NFLScore temperature
 
-football: football.c
-	$(CC) $(CFLAGS) football.c -o football
+NFLScore: NFLScore.c
+	$(CC) $(CFLAGS) NFLScore.c -o NFLScore
 
-temp_convert: temp_convert.c
-	$(CC) $(CFLAGS) temp_convert.c -o temp_convert
+temperature: temperature.c
+	$(CC) $(CFLAGS) temperature.c -o temperature
 
 clean:
-	rm -f football temp_convert
+	rm -f NFLScore temperature
